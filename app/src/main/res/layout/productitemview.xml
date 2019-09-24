@@ -1,40 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="7dp"
+    android:layout_margin="5dp"
+    android:id="@+id/cardview"
     android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/productImageIV"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/rice"></ImageView>
-
-    <TextView
-        android:id="@+id/productNameTV"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"></TextView>
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/productImageIV"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/rice"></ImageView>
 
-    <TextView
-        android:id="@+id/productPrizeTV"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"></TextView>
+        <TextView
+            android:id="@+id/productNameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"></TextView>
 
-    <TextView
-        android:id="@+id/productcodeTV"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"></TextView>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="4dp"
-        android:background="#D5D2D2"></View>
+        <TextView
+            android:id="@+id/productPrizeTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"></TextView>
+
+        <TextView
+            android:id="@+id/productcodeTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"></TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#D5D2D2"></View>
+
+    </LinearLayout>
 
 
-</LinearLayout>
+</androidx.cardview.widget.CardView>
